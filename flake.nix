@@ -2,10 +2,9 @@
   description = "GrapheneOS Auditor — hardware-based attestation app (pleme-io fork)";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.follows = "substrate/nixpkgs";
     substrate = {
       url = "github:pleme-io/substrate";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     devenv = {
       url = "github:cachix/devenv";
